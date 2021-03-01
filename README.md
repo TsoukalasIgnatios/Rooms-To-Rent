@@ -1,4 +1,4 @@
 # Rooms-To-Rent
 Rooms To Rent
 
-creates a desktop with jframe that handles clients reservation that included in database
+creates a desktop application with jframe view that handles clients reservations that included in database
