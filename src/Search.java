@@ -1,5 +1,4 @@
-﻿package RoomsToRent;
-
+﻿
 //Import libraries
 import java.awt.Color;
 import java.awt.Font;
@@ -29,6 +28,11 @@ public class Search extends JFrame {
 	public Search() {
 		super();
 		initialize();
+	}
+	public static void main(String[] args) {
+		Search search = new Search();
+		search.setVisible(true);
+
 	}
 
 	/**

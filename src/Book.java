@@ -1,4 +1,3 @@
-package RoomsToRent;
 
 import java.util.Date;
 

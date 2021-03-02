@@ -1,4 +1,3 @@
-package RoomsToRent;
 
 public class TableTest {
 	

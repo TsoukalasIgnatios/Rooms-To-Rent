@@ -1,4 +1,3 @@
-package RoomsToRent;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -126,7 +125,7 @@ public void setPassword(String Password ){
  * @return Returns the clientlist.
  * 
  */
-public Collection<clientlist> getclientlist()
+public Collection<Client> getclientlist()
 {
 	return clientlist;
 }
@@ -256,7 +255,7 @@ public void clearClient(){
  */
 public Collection<Book> getBook()
 {
-	return book;
+	return booklist;
 }
  
 /**
@@ -267,7 +266,7 @@ public Collection<Book> getBook()
  * 
  */
 public Iterator<Book> bookIterator(){
-	return book.iterator();
+	return booklist.iterator();
 }
 
 /**
@@ -278,7 +277,7 @@ public Iterator<Book> bookIterator(){
  *
  */
 public boolean isBookEmpty(){
-	return book.isEmpty();
+	return booklist.isEmpty();
 }
 
 /**
@@ -289,7 +288,7 @@ public boolean isBookEmpty(){
  *
  */
 public boolean containsBook(Book book){
-	return this.book.contains(book);
+	return this.booklist.contains(book);
 }
 
 /**
@@ -301,7 +300,7 @@ public boolean containsBook(Book book){
  *
  */
 public boolean containsAllBook(Collection<Book> book){
-	return this.book.containsAll(book);
+	return this.booklist.containsAll(book);
 }
 
 /**
@@ -312,7 +311,7 @@ public boolean containsAllBook(Collection<Book> book){
  *
  */
 public int bookSize(){
-	return book.size();
+	return booklist.size();
 }
 
 /**
@@ -323,7 +322,7 @@ public int bookSize(){
  *
  */
 public Book[] bookToArray(){
-	return book.toArray(new Book[book.size()]);
+	return booklist.toArray(new Book[booklist.size()]);
 }
 
 
@@ -336,7 +335,7 @@ public Book[] bookToArray(){
  *
  */
 public boolean addBook(Book book){
-	return this.book.add(book);
+	return this.booklist.add(book);
 }
 
 /**
@@ -346,7 +345,7 @@ public boolean addBook(Book book){
  *
  */
 public void setBook(Collection<Book> book){
-	this.book = book;
+	this.booklist = book;
 }
 
 /**
@@ -358,7 +357,7 @@ public void setBook(Collection<Book> book){
  *
  */
 public boolean removeBook(Book book){
-	return this.book.remove(book);
+	return this.booklist.remove(book);
 }
 
 /**
@@ -368,7 +367,7 @@ public boolean removeBook(Book book){
  *
  */
 public void clearBook(){
-	this.book.clear();
+	this.booklist.clear();
 }
 
 /**
@@ -383,7 +382,7 @@ public void clearBook(){
  */
 public Collection<Room> getRoom()
 {
-	return room;
+	return roomlist;
 }
  
 /**
@@ -394,7 +393,7 @@ public Collection<Room> getRoom()
  * 
  */
 public Iterator<Room> roomIterator(){
-	return room.iterator();
+	return roomlist.iterator();
 }
 
 /**
@@ -405,7 +404,7 @@ public Iterator<Room> roomIterator(){
  *
  */
 public boolean isRoomEmpty(){
-	return room.isEmpty();
+	return roomlist.isEmpty();
 }
 
 /**
@@ -416,7 +415,7 @@ public boolean isRoomEmpty(){
  *
  */
 public boolean containsRoom(Room room){
-	return this.room.contains(room);
+	return this.roomlist.contains(room);
 }
 
 /**
@@ -428,7 +427,7 @@ public boolean containsRoom(Room room){
  *
  */
 public boolean containsAllRoom(Collection<Room> room){
-	return this.room.containsAll(room);
+	return this.roomlist.containsAll(room);
 }
 
 /**
@@ -439,7 +438,7 @@ public boolean containsAllRoom(Collection<Room> room){
  *
  */
 public int roomSize(){
-	return room.size();
+	return roomlist.size();
 }
 
 /**
@@ -450,16 +449,16 @@ public int roomSize(){
  *
  */
 public Room[] roomToArray(){
-	return room.toArray(new Room[room.size()]);
+	return roomlist.toArray(new Room[roomlist.size()]);
 }
 
 
 public boolean addRoom(Room room){
-	return this.room.add(room);
+	return this.roomlist.add(room);
 }
 
 public void setRoom(Collection<Room> room){
-	this.room = room;
+	this.roomlist = room;
 }
 
 /**
@@ -471,7 +470,7 @@ public void setRoom(Collection<Room> room){
  *
  */
 public boolean removeRoom(Room room){
-	return this.room.remove(room);
+	return this.roomlist.remove(room);
 }
 
 /**
@@ -481,10 +480,10 @@ public boolean removeRoom(Room room){
  *
  */
 public void clearRoom(){
-	this.room.clear();
+	this.roomlist.clear();
 }
 
-public RoomsToRent.clientlist searchClient(){
+public Collection<Client> searchClient(){
 	return null;
 
 }

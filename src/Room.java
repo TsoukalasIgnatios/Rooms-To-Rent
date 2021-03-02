@@ -1,4 +1,3 @@
-package RoomsToRent;
 
 public class Room {
 
@@ -96,7 +95,7 @@ public void setRentPrice(double RentPrice ){
 	this.RentPrice = RentPrice;
 }
 
-public RoomsToRent.Room searchRoom(){
+public Room searchRoom(){
 	return null;
 
 }

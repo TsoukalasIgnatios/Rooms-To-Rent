@@ -1,6 +1,5 @@
-package RoomsToRent;
 
-import java.sql.conn;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,15 +18,15 @@ public class SQLUtilities {
 		        // Create a conn to the database
 
 		        String url = "jdbc:mysql://localhost:3306/test3?useUnicode=true&characterEncoding=utf8";
-		        String username = "test";
-		        String password = "123";
-		        conn = DriverManager.getconn(url, username, password);
+		        String username = "hbstudent";
+		        String password = "hbstudent";
+		        conn = DriverManager.getConnection(url, username, password);
 		    } catch (ClassNotFoundException e) {
-				String msg = getStackTrace(ex);
-		        System.out.println(msg);
+//				String msg = e.printStackTrace();
+		        System.out.println("not found");
 		    } catch (SQLException e) {
-		        String msg = getStackTrace(ex);
-		        System.out.println(msg);
+		         e.printStackTrace();
+		        System.out.println("sql exce");
 		    }
 		    return conn;
 	 }

@@ -1,4 +1,3 @@
-package RoomsToRent;
 
 import java.awt.Rectangle;
 import javax.swing.JButton;
@@ -93,7 +92,7 @@ public class Show extends JFrame {
 			stiles[0]="NAME";
 			stiles[1]="SURNAME";
 			                             
-			jTable = new JTable(table,stiles);
+			jTable = new JTable(tbl,stiles);
 		}
 		return jTable;
 	}

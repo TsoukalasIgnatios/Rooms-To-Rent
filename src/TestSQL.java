@@ -1,8 +1,9 @@
-package RoomsToRent;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import junit.framework.TestCase;
+
 
 public class TestSQL extends TestCase {
 

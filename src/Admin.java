@@ -1,4 +1,4 @@
-package RoomsToRent;
+
 
 public class Admin {
 
@@ -58,7 +58,7 @@ public void setPassword(String Password ){
 	this.Password = Password;
 }
 
-public RoomsToRent.Customer addCustomer(){
+public Customer addCustomer(){
 	return null;
 }
 public String getAddAdvertisment()

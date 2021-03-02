@@ -1,4 +1,3 @@
-package RoomsToRent;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -272,7 +271,7 @@ public int bookSize(){
  *
  */
 public Book[] bookToArray(){
-	return booklist.toArray(new Book[book.size()]);
+	return booklist.toArray(new Book[booklist.size()]);
 }
 
 
@@ -320,7 +319,7 @@ public void clearBook(){
 	this.booklist.clear();
 }
 
-public RoomsToRent.Room searchRoom(){
+public Room searchRoom(){
 	return null;
 
 }
